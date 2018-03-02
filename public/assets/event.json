@@ -1,0 +1,146 @@
+{
+  "general": {
+    "app" : {
+      "mainTitle" : "Apps DE Summit 2018"
+    }
+  },
+
+  "days": [
+    {
+      "id": 1,
+      "date": "15.03.2018"
+    },
+    {
+      "id": 2,
+      "date": "16.03.2018"
+    },
+    {
+      "id": 3,
+      "date": "17.03.2018"
+    }
+  ],
+
+  "streams": [
+    {
+      "id": 1,
+      "name": "Hype"
+    },
+    {
+      "id": 2,
+      "name": "iCSD"
+    },
+    {
+      "id": 3,
+      "name": "Tech"
+    }
+  ],
+  
+  "timeSlots": [
+    {
+      "id": 101,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "09:30",
+      "endTime": "10:00",
+      "name": "Registration & Coffee",
+      "isBreak": true
+    },
+    {
+      "id": 102,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "10:00",
+      "endTime": "10:15",
+      "name": "Welcome + Organisation",
+      "presenters": [1, 2],
+      "room": 1,
+      "isBreak": false
+    },
+    {
+      "id": 103,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "10:15",
+      "endTime": "10:40",
+      "name": "Hybrid Communities",
+      "presenters": [1],
+      "room": 1,
+      "isBreak": false
+    },
+    {
+      "id": 104,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "10:40",
+      "endTime": "12:00",
+      "name": "Stream session",
+      "presenters": [1],
+      "room": "Stream-Rooms",
+      "isBreak": false
+    },
+    {
+      "id": 105,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "name": "Lunch",
+      "isBreak": true
+    },
+    {
+      "id": 115,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "15:15",
+      "endTime": "15:30",
+      "name": "Coffee break",
+      "isBreak": true
+    },
+    {
+      "id": 122,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "name": "Dinner",
+      "isBreak": true
+    },
+    {
+      "id": 123,
+      "day": 1,
+      "streams": [1, 2, 3],
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "name": "Firesite Chat (2 parallel topics)",
+      "isBreak": true
+    }
+  ],
+  
+  "persons": [
+    {
+      "id": 1,
+      "name": "Marco Rose"
+    },
+    {
+      "id": 2,
+      "name": "Piotr Poprawski",
+      "position": "Vice President",
+      "organisation": "Capgemini Poland"
+    },
+    {
+      "id": 3,
+      "name": "Pierre Marchand"
+    },
+    {
+      "id": 4,
+      "name": "Michael Schulte"
+    }
+  ],
+
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Plenum"
+    }
+  ]
+}
