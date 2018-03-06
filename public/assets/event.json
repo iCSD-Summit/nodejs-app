@@ -4,143 +4,380 @@
       "mainTitle" : "Apps DE Summit 2018"
     }
   },
-
-  "days": [
-    {
-      "id": 1,
-      "date": "15.03.2018"
-    },
-    {
-      "id": 2,
-      "date": "16.03.2018"
-    },
-    {
-      "id": 3,
-      "date": "17.03.2018"
-    }
-  ],
-
-  "streams": [
-    {
-      "id": 1,
-      "name": "Hype"
-    },
-    {
-      "id": 2,
-      "name": "iCSD"
-    },
-    {
-      "id": 3,
-      "name": "Tech"
-    }
-  ],
   
-  "timeSlots": [
-    {
-      "id": 101,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "09:30",
-      "endTime": "10:00",
-      "name": "Registration & Coffee",
-      "isBreak": true
-    },
-    {
-      "id": 102,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "10:00",
-      "endTime": "10:15",
-      "name": "Welcome + Organisation",
-      "presenters": [1, 2],
-      "room": 1,
-      "isBreak": false
-    },
-    {
-      "id": 103,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "10:15",
-      "endTime": "10:40",
-      "name": "Hybrid Communities",
-      "presenters": [1],
-      "room": 1,
-      "isBreak": false
-    },
-    {
-      "id": 104,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "10:40",
-      "endTime": "12:00",
-      "name": "Stream session",
-      "presenters": [1],
-      "room": "Stream-Rooms",
-      "isBreak": false
-    },
-    {
-      "id": 105,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "12:00",
-      "endTime": "13:00",
-      "name": "Lunch",
-      "isBreak": true
-    },
-    {
-      "id": 115,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "15:15",
-      "endTime": "15:30",
-      "name": "Coffee break",
-      "isBreak": true
-    },
-    {
-      "id": 122,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "name": "Dinner",
-      "isBreak": true
-    },
-    {
-      "id": 123,
-      "day": 1,
-      "streams": [1, 2, 3],
-      "startTime": "20:00",
-      "endTime": "21:00",
-      "name": "Firesite Chat (2 parallel topics)",
-      "isBreak": true
-    }
-  ],
-  
-  "persons": [
-    {
-      "id": 1,
-      "name": "Marco Rose"
-    },
-    {
-      "id": 2,
-      "name": "Piotr Poprawski",
-      "position": "Vice President",
-      "organisation": "Capgemini Poland"
-    },
-    {
-      "id": 3,
-      "name": "Pierre Marchand"
-    },
-    {
-      "id": 4,
-      "name": "Michael Schulte"
-    }
-  ],
+  "agenda": {
+    "days": [
+      {
+        "id": 1,
+        "date": "15.03.2018",
+        "timeSlots": [
+          {
+            "id": 101,
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "name": "Registration & Coffee",
+            "isBreak": true
+          },
+          {
+            "id": 102,
+            "startTime": "10:00",
+            "endTime": "10:15",
+            "name": "Welcome + Organisation",
+            "presenters": [1, 2],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 103,
+            "startTime": "10:15",
+            "endTime": "10:40",
+            "name": "Hybrid Communities",
+            "presenters": [1],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 104,
+            "startTime": "10:40",
+            "endTime": "12:00",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 105,
+            "startTime": "12:00",
+            "endTime": "13:00",
+            "name": "Lunch",
+            "isBreak": true
+          },
+          {
+            "id": 106,
+            "streams": [1],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "Real Project AR/VR",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 107,
+            "streams": [2],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "iCSD Devonfw",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 108,
+            "streams": [3],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "Agile Spec-Method",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 109,
+            "streams": [1],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "AI/ML",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 110,
+            "streams": [2],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "iCSD ProdLine",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 111,
+            "streams": [3],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "Real Project Web",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 112,
+            "streams": [1],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "Blockchain",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 113,
+            "streams": [2],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "Real iCSD ProjectItaly",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 114,
+            "streams": [3],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "CyberSec",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 115,
+            "startTime": "15:15",
+            "endTime": "15:30",
+            "name": "Coffee break",
+            "isBreak": true
+          },
+          {
+            "id": 116,
+            "streams": [1],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "Real Project e.g. eprimo",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 117,
+            "streams": [2],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "E2E-Testing",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 118,
+            "streams": [3],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "Angular",
+            "room": "Conf-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 119,
+            "startTime": "16:15",
+            "endTime": "17:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 120,
+            "startTime": "17:45",
+            "endTime": "18:25",
+            "name": "Stream Goals (each 6 min sharp)",
+            "presenters": "Streamleads",
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 121,
+            "startTime": "18:25",
+            "endTime": "18:30",
+            "name": "Closing of Day 1",
+            "presenters": [1],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 122,
+            "startTime": "19:00",
+            "endTime": "22:00",
+            "name": "Dinner",
+            "isBreak": true
+          },
+          {
+            "id": 123,
+            "startTime": "20:00",
+            "endTime": "21:00",
+            "name": "Firesite Chat (2 parallel topics)",
+            "isBreak": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "date": "16.03.2018",
+        "timeSlots": [
+          {
+            "id": 201,
+            "startTime": "08:00",
+            "endTime": "09:30",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 202,
+            "startTime": "09:30",
+            "endTime": "09:45",
+            "name": "Coffee break",
+            "isBreak": true
+          },
+          {
+            "id": 203,
+            "startTime": "09:45",
+            "endTime": "10:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 204,
+            "startTime": "10:45",
+            "endTime": "11:30",
+            "name": "Keynote \"Automation\"",
+            "room": "Plenum",
+            "presenters": [3],
+            "isBreak": false
+          },
+          {
+            "id": 205,
+            "startTime": "11:30",
+            "endTime": "12:30",
+            "name": "Lunch",
+            "isBreak": true
+          },
+          {
+            "id": 206,
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "name": "TV-Meeting bidirectional",
+            "room": "Plenum",
+            "presenters": [4],
+            "isBreak": false
+          },
+          {
+            "id": 207,
+            "startTime": "13:30",
+            "endTime": "13:45",
+            "name": "Photo Session",
+            "room": "Outside",
+            "presenters": "Photographer NN",
+            "isBreak": false
+          },
+          {
+            "id": 208,
+            "startTime": "13:45",
+            "endTime": "15:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 209,
+            "startTime": "15:45",
+            "endTime": "16:00",
+            "name": "Coffee break",
+            "isBreak": true
+          },
+          {
+            "id": 210,
+            "startTime": "16:00",
+            "endTime": "17:00",
+            "name": "Stream report out (6*10min)",
+            "room": "Plenum",
+            "presenters": "Streamleads",
+            "isBreak": false
+          },
+          {
+            "id": 211,
+            "startTime": "17:00",
+            "endTime": "17:30",
+            "name": "Closing of the summit",
+            "room": "Plenum",
+            "presenters": [1],
+            "isBreak": false
+          },
+          {
+            "id": 212,
+            "startTime": "18:30",
+            "endTime": "22:00",
+            "name": "Dinner",
+            "isBreak": true
+          },
+          {
+            "id": 213,
+            "startTime": "20:00",
+            "endTime": "21:30",
+            "name": "Wroclaw City Night Sightseeing",
+            "isBreak": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "date": "17.03.2018",
+        "description": "voluntary participation",
+        "timeSlots": [
+          {
+            "id": 301,
+            "startTime": "08:30",
+            "endTime": "12:00",
+            "name": "Al Hackathon / Devonfw-Bootstrap / Continuus Coffee",
+            "isBreak": true
+          },
+          {
+            "id": 302,
+            "startTime": "12:00",
+            "endTime": "13:00",
+            "name": "Lunch",
+            "isBreak": true
+          }
+        ]
+      }
+    ],
 
-  "rooms": [
-    {
-      "id": 1,
-      "name": "Plenum"
-    }
-  ]
+    "streams": [
+      {
+        "id": 1,
+        "name": "Hype",
+        "color": "#0070ad"
+      },
+      {
+        "id": 2,
+        "name": "iCSD",
+        "color": "#ff304c"
+      },
+      {
+        "id": 3,
+        "name": "Tech",
+        "color": "#95e616"
+      }
+    ],
+    
+    "presenters": [
+      {
+        "id": 1,
+        "name": "Marco Rose"
+      },
+      {
+        "id": 2,
+        "name": "Piotr Poprawski",
+        "position": "Vice President",
+        "organisation": "Capgemini Poland"
+      },
+      {
+        "id": 3,
+        "name": "Pierre Marchand"
+      },
+      {
+        "id": 4,
+        "name": "Michael Schulte"
+      }
+    ]
+  }
 }
