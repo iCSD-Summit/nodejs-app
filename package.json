@@ -1,12 +1,11 @@
 {
-  "name": "NodejsWebApp1",
+  "name": "nodejs-summit2018-server",
   "private": true,
   "version": "0.0.0",
   "description": "NodejsWebApp1",
   "main": "server.js",
   "author": {
-    "name": "ctsodev1",
-    "email": ""
+    "name": "ctsodev1"
   },
   "dependencies": {
     "express": "^4.13.3",
