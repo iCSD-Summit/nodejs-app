@@ -1,19 +1,95 @@
 ﻿const express = require('express');
-const app = express();
-const port = process.env.port || 1337;
-const path = require('path');
 const fallback = require('express-history-api-fallback');
 const nocache = require('nocache');
+const path = require('path');
+const webpush = require('web-push');
+const file = require('fs');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = process.env.port || 1337;
 const root = path.join(__dirname, 'public');
+const subscriptionsFile = path.join(__dirname, 'subscriptions', 'subscriptions.json');
+
+const pushOptions = {
+    vapidDetails: {
+        subject: 'https://www.capgemini.com/pl-pl/',
+        publicKey: 'BMjRh7QofnoNTHxNAoM8wrfsCdEJH39JNg-P-JMnvyIOcuybzJcvwQt8wM6yPJad-phACdKLoGocjCfs9tZ4dL4',
+        privateKey: '03xK2AyoX_eZNyx7tJm8972okURODqimuTOln71v55A'
+    },
+    TTL: 60 * 60
+}
 
 app.use(nocache());
 app.use(express.static(root));
+app.use(bodyParser.json());
 
 app.get('/say-hello', function (req, res) {
     res.send('Hello World!');
 });
 
 app.use(fallback('index.html', {root: root}));
+
+// PUSH NOTIFICATION
+
+// SUBSCRIBERS
+app.post('/registerSubscription', (req, res) => { 
+    getAllSubscriptions().then((data) => {
+        let subscriptions = data;
+        subscriptions.push(req.body.subscription);
+        return saveSubscription(subscriptions);
+    })
+    .then(() => {
+        res.status(200).send({success: true});
+    })
+    .catch(() => {
+        res.sendStatus(500);
+    });
+});
+
+app.post('/unregisterSubscription', (req, res) => {
+    getAllSubscriptions().then((data) => {
+        let subscriptionObject = req.body.subscription;
+        let subscriptions = data;
+
+        subscriptions = subscriptions.filter(el => el.endpoint !== subscriptionObject.endpoint);
+        return saveSubscription(subscriptions);
+    }).then(() => {
+        res.status(200).send({success: true});
+    })
+    .catch(() => {
+        res.sendStatus(500);
+    });
+});
+
+function getAllSubscriptions() {
+    return new Promise((resolve, reject) => { 
+        file.readFile(subscriptionsFile, (err, data) => {
+            let result;
+            if (!err) {
+                result = data && data.length > 0 ? JSON.parse(data) : [];            
+            } else {
+                result = [];
+            }
+
+            resolve(result);
+        });
+    });
+}
+
+function saveSubscription(subscriptions) {
+    return new Promise((resolve, reject) => {
+        file.writeFile(subscriptionsFile, JSON.stringify(subscriptions), {flag: 'w+' }, (err) => {
+            if (err) {
+                console.log('Cannot write subscriptions: ' + err.message);     
+                reject();
+            }
+            
+            resolve();                
+        });
+    });
+}
+
 
 // const webpush = require('web-push'),
 //       bodyParser = require('body-parser'),
@@ -56,10 +132,7 @@ app.use(fallback('index.html', {root: root}));
 //     });
 // }
 //
-// app.post('/registerSubscription', (req, res) => {
-//     subscriptions.push(req.body.subscription);
-//     res.status(200).send({success: true});
-// });
+
 //
 // app.post('/unregisterSubscription', (req, res) => {
 //     var subscriptionObject = req.body.subscription;
