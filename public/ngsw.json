@@ -1,0 +1,77 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/assets/favicon.ico",
+        "/inline.d9e234e197401a19b4ec.bundle.js",
+        "/main.6566b9849c93ba447a16.bundle.js",
+        "/polyfills.f20484b2fa4642e0dca8.bundle.js",
+        "/styles.5d37598858f32f09d719.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/android-chrome-192x192.png",
+        "/assets/android-chrome-512x512.png",
+        "/assets/apple-touch-icon.png",
+        "/assets/browserconfig.xml",
+        "/assets/favicon-16x16.png",
+        "/assets/favicon-32x32.png",
+        "/assets/mstile-150x150.png",
+        "/assets/safari-pinned-tab.svg",
+        "/assets/site.webmanifest"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "fonts",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "\\/api\\/event"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/inline.d9e234e197401a19b4ec.bundle.js": "b6ae7f5189506dbd6a91f0b73c7c7317867662e9",
+    "/assets/android-chrome-192x192.png": "a4f76cd074f91a7f38c8e088bfa3f5ae99d81ff4",
+    "/main.6566b9849c93ba447a16.bundle.js": "2552e6f1d47fedff9bdd7930a3c7e65ffd717b89",
+    "/assets/android-chrome-512x512.png": "feea60dcedf78d257772afade90f7e87dfca4d27",
+    "/polyfills.f20484b2fa4642e0dca8.bundle.js": "0b0af365e031b7cbba789493d311e94192720c68",
+    "/assets/apple-touch-icon.png": "68afb35370e5b90d07a68194b3d44b596d207f2e",
+    "/styles.5d37598858f32f09d719.bundle.css": "7f60153e6c9d8e2b63500f2f9e89aae4113ef3d0",
+    "/assets/browserconfig.xml": "9b46c91949cde2093cf9de45e665174b72840d22",
+    "/index.html": "f064deff46cbfd9fad07c850d48b4e432cf4febe",
+    "/assets/favicon-16x16.png": "ae52a2ffe342a433688010d02207e47b6d1aaec7",
+    "/assets/favicon.ico": "0348a6c1dc488ac96fa9fb2eef438e3bbd18d288",
+    "/assets/favicon-32x32.png": "c38a431700851d549aa6a8f27a59593c54e63e57",
+    "/assets/mstile-150x150.png": "a8fa51aa94b5d14c0e935c7da3f730655da69768",
+    "/assets/safari-pinned-tab.svg": "c2d28c860454f0958dcbd4867c09251f01779da6",
+    "/assets/site.webmanifest": "7bfc532cf8a2bf68318275309539e9861e08c5e0"
+  }
+}
