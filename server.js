@@ -5,9 +5,14 @@ const path = require('path');
 const fallback = require('express-history-api-fallback');
 const nocache = require('nocache');
 const root = path.join(__dirname, 'public');
+const currentEvent = require('./data/event.json');
 
 app.use(nocache());
 app.use(express.static(root));
+
+app.get('/api/event', function (req, res) {
+    res.json(currentEvent);
+});
 
 app.get('/say-hello', function (req, res) {
     res.send('Hello World!');
