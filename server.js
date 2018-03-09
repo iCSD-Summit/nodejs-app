@@ -1,6 +1,6 @@
 ﻿const express = require('express');
 const app = express();
-const port = process.env.port || 1337;
+const port = process.env.port || 5555;
 const path = require('path');
 const fallback = require('express-history-api-fallback');
 const nocache = require('nocache');

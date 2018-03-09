@@ -1,18 +1,18 @@
 {
   "configVersion": 1,
-  "index": "/index.html",
+  "index": "https://summit-2018.azurewebsites.net/index.html", 
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/index.html",
-        "/assets/favicon.ico",
-        "/inline.318b50c57b4eba3d437b.bundle.js",
-        "/main.234e1176678224f0ff96.bundle.js",
-        "/polyfills.fb8ad884215c65546efb.bundle.js",
-        "/styles.5106122808ac6092fc8f.bundle.css"
+        "https://summit-2018.azurewebsites.net/index.html",
+        "https://summit-2018.azurewebsites.net/assets/favicon.ico",
+        "https://summit-2018.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js",
+        "https://summit-2018.azurewebsites.net/main.234e1176678224f0ff96.bundle.js",
+        "https://summit-2018.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js",
+        "https://summit-2018.azurewebsites.net/styles.5106122808ac6092fc8f.bundle.css"
       ],
       "patterns": []
     },
@@ -21,15 +21,15 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "/assets/android-chrome-192x192.png",
-        "/assets/android-chrome-512x512.png",
-        "/assets/apple-touch-icon.png",
-        "/assets/browserconfig.xml",
-        "/assets/favicon-16x16.png",
-        "/assets/favicon-32x32.png",
-        "/assets/manifest.json",
-        "/assets/mstile-150x150.png",
-        "/assets/safari-pinned-tab.svg"
+        "https://summit-2018.azurewebsites.net/assets/android-chrome-192x192.png",
+        "https://summit-2018.azurewebsites.net/assets/android-chrome-512x512.png",
+        "https://summit-2018.azurewebsites.net/assets/apple-touch-icon.png",
+        "https://summit-2018.azurewebsites.net/assets/browserconfig.xml",
+        "https://summit-2018.azurewebsites.net/assets/favicon-16x16.png",
+        "https://summit-2018.azurewebsites.net/assets/favicon-32x32.png",
+        "https://summit-2018.azurewebsites.net/assets/manifest.json",
+        "https://summit-2018.azurewebsites.net/assets/mstile-150x150.png",
+        "https://summit-2018.azurewebsites.net/assets/safari-pinned-tab.svg"
       ],
       "patterns": []
     },
@@ -58,20 +58,20 @@
     }
   ],
   "hashTable": {
-    "/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "/assets/android-chrome-192x192.png": "a4f76cd074f91a7f38c8e088bfa3f5ae99d81ff4",
-    "/main.234e1176678224f0ff96.bundle.js": "d7b3c69357781de7e3cb7ca1f02dc4bce91274e7",
-    "/assets/android-chrome-512x512.png": "feea60dcedf78d257772afade90f7e87dfca4d27",
-    "/polyfills.fb8ad884215c65546efb.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "/assets/apple-touch-icon.png": "68afb35370e5b90d07a68194b3d44b596d207f2e",
-    "/styles.5106122808ac6092fc8f.bundle.css": "2d82194c51f96c7b29b7ccd9454bc756894a0e91",
-    "/assets/browserconfig.xml": "9b46c91949cde2093cf9de45e665174b72840d22",
-    "/index.html": "c7740916566a46559fd941d2aa0cc00bd53383f3",
-    "/assets/favicon-16x16.png": "ae52a2ffe342a433688010d02207e47b6d1aaec7",
-    "/assets/favicon.ico": "0348a6c1dc488ac96fa9fb2eef438e3bbd18d288",
-    "/assets/favicon-32x32.png": "c38a431700851d549aa6a8f27a59593c54e63e57",
-    "/assets/manifest.json": "7bfc532cf8a2bf68318275309539e9861e08c5e0",
-    "/assets/mstile-150x150.png": "a8fa51aa94b5d14c0e935c7da3f730655da69768",
-    "/assets/safari-pinned-tab.svg": "c2d28c860454f0958dcbd4867c09251f01779da6"
+    "https://summit-2018.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "https://summit-2018.azurewebsites.net/assets/android-chrome-192x192.png": "a4f76cd074f91a7f38c8e088bfa3f5ae99d81ff4",
+    "https://summit-2018.azurewebsites.net/main.234e1176678224f0ff96.bundle.js": "d7b3c69357781de7e3cb7ca1f02dc4bce91274e7",
+    "https://summit-2018.azurewebsites.net/assets/android-chrome-512x512.png": "feea60dcedf78d257772afade90f7e87dfca4d27",
+    "https://summit-2018.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
+    "https://summit-2018.azurewebsites.net/assets/apple-touch-icon.png": "68afb35370e5b90d07a68194b3d44b596d207f2e",
+    "https://summit-2018.azurewebsites.net/styles.5106122808ac6092fc8f.bundle.css": "2d82194c51f96c7b29b7ccd9454bc756894a0e91",
+    "https://summit-2018.azurewebsites.net/assets/browserconfig.xml": "9b46c91949cde2093cf9de45e665174b72840d22",
+    "https://summit-2018.azurewebsites.net/index.html": "d643e7eae94fe0d57e1d39077aed0164c439151f",
+    "https://summit-2018.azurewebsites.net/assets/favicon-16x16.png": "ae52a2ffe342a433688010d02207e47b6d1aaec7",
+    "https://summit-2018.azurewebsites.net/assets/favicon.ico": "0348a6c1dc488ac96fa9fb2eef438e3bbd18d288",
+    "https://summit-2018.azurewebsites.net/assets/favicon-32x32.png": "c38a431700851d549aa6a8f27a59593c54e63e57",
+    "https://summit-2018.azurewebsites.net/assets/manifest.json": "7bfc532cf8a2bf68318275309539e9861e08c5e0",
+    "https://summit-2018.azurewebsites.net/assets/mstile-150x150.png": "a8fa51aa94b5d14c0e935c7da3f730655da69768",
+    "https://summit-2018.azurewebsites.net/assets/safari-pinned-tab.svg": "c2d28c860454f0958dcbd4867c09251f01779da6"
   }
 }
