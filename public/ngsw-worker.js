@@ -441,7 +441,7 @@ class AssetGroup {
         const parsed = this.adapter.parseUrl(url, this.scope.registration.scope);
         if (parsed.origin === this.origin) {
             // The URL is relative to the SW's origin domain.
-            /*return parsed.path;*/ return url; // overriding default @angular/service-worker URL behavior, to handle routing bug angular/angular #21636
+            return parsed.path;
         }
         else {
             return url;
@@ -1861,7 +1861,7 @@ class Driver {
         }
     }
     async handlePush(data) {
-        this.broadcast({
+        await this.broadcast({
             type: 'PUSH',
             data,
         });
@@ -1872,7 +1872,7 @@ class Driver {
         let options = {};
         NOTIFICATION_OPTION_NAMES.filter(name => desc.hasOwnProperty(name))
             .forEach(name => options[name] = desc[name]);
-        this.scope.registration.showNotification(desc['title'], options);
+        await this.scope.registration.showNotification(desc['title'], options);
     }
     async reportStatus(client, promise, nonce) {
         const response = { type: 'STATUS', nonce, status: true };
@@ -2182,7 +2182,7 @@ class Driver {
         if (!res.ok) {
             if (res.status === 404) {
                 await this.deleteAllCaches();
-                this.scope.registration.unregister();
+                await this.scope.registration.unregister();
             }
             throw new Error('Manifest fetch failed!');
         }
@@ -2235,7 +2235,7 @@ class Driver {
             // The latest manifest is broken. This means that new clients are at the mercy of the
             // network, but caches continue to be valid for previous versions. This is
             // unfortunate but unavoidable.
-            /*this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;*/ // removing EXISTING_CLIENTS_ONLY state, as it behaves incorrectly in offline testing, both locally & on GitHub pages
+            this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
             this.stateMessage = `Degraded due to failed initialization: ${errorToString(err)}`;
             // Cancel the binding for these clients.
             Array.from(this.clientVersionMap.keys())
@@ -2265,7 +2265,7 @@ class Driver {
         // Firstly, check if the manifest version is correct.
         if (manifest.configVersion !== SUPPORTED_CONFIG_VERSION) {
             await this.deleteAllCaches();
-            this.scope.registration.unregister();
+            await this.scope.registration.unregister();
             throw new Error(`Invalid config version: expected ${SUPPORTED_CONFIG_VERSION}, got ${manifest.configVersion}.`);
         }
         // Cause the new version to become fully initialized. If this fails, then the
@@ -2292,7 +2292,7 @@ class Driver {
         }
         catch (err) {
             this.debugger.log(err, `Error occurred while updating to manifest ${hash}`);
-            /*this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;*/ // removing EXISTING_CLIENTS_ONLY state, as it behaves incorrectly in offline testing, both locally & on GitHub pages
+            this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
             this.stateMessage = `Degraded due to failed initialization: ${errorToString(err)}`;
             return false;
         }
