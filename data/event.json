@@ -56,8 +56,9 @@
             "streams": [1],
             "startTime": "13:00",
             "endTime": "13:45",
-            "name": "Real Project AR/VR",
-            "room": "Conf-Rooms",
+            "name": "Enhancing the reality - AR and VR in practice",
+            "presenters": [5],
+            "room": "Millenium 1+2",
             "isBreak": false
           },
           {
@@ -65,8 +66,9 @@
             "streams": [2],
             "startTime": "13:00",
             "endTime": "13:45",
-            "name": "iCSD Devonfw",
-            "room": "Conf-Rooms",
+            "name": "State of and roadmap for iCSD / devonfw",
+            "presenters": [9],
+            "room": "Millenium 3",
             "isBreak": false
           },
           {
@@ -74,8 +76,9 @@
             "streams": [3],
             "startTime": "13:00",
             "endTime": "13:45",
-            "name": "Agile Spec-Method",
-            "room": "Conf-Rooms",
+            "name": "Specification in Agile Projects",
+            "presenters": [15],
+            "room": "Millenium 4",
             "isBreak": false
           },
           {
@@ -83,8 +86,9 @@
             "streams": [1],
             "startTime": "13:45",
             "endTime": "14:30",
-            "name": "AI/ML",
-            "room": "Conf-Rooms",
+            "name": "Data Science in Real Life",
+            "presenters": [6],
+            "room": "Millenium 1+2",
             "isBreak": false
           },
           {
@@ -92,8 +96,9 @@
             "streams": [2],
             "startTime": "13:45",
             "endTime": "14:30",
-            "name": "iCSD ProdLine",
-            "room": "Conf-Rooms",
+            "name": "Production Line: DevSecOps in a box",
+            "presenters": [10, 11],
+            "room": "Millenium 3",
             "isBreak": false
           },
           {
@@ -101,8 +106,9 @@
             "streams": [3],
             "startTime": "13:45",
             "endTime": "14:30",
-            "name": "Real Project Web",
-            "room": "Conf-Rooms",
+            "name": "Is your Web app better than mine?",
+            "presenters": [17, 16],
+            "room": "Millenium 4",
             "isBreak": false
           },
           {
@@ -110,8 +116,9 @@
             "streams": [1],
             "startTime": "14:30",
             "endTime": "15:15",
-            "name": "Blockchain",
-            "room": "Conf-Rooms",
+            "name": "Blockchain - Hype or Chance?",
+            "presenters": [7],
+            "room": "Millenium 1+2",
             "isBreak": false
           },
           {
@@ -119,8 +126,9 @@
             "streams": [2],
             "startTime": "14:30",
             "endTime": "15:15",
-            "name": "Real iCSD ProjectItaly",
-            "room": "Conf-Rooms",
+            "name": "Devonfw and Production Line: A Success Story for Italian Projects",
+            "presenters": [12],
+            "room": "Millenium 3",
             "isBreak": false
           },
           {
@@ -128,8 +136,9 @@
             "streams": [3],
             "startTime": "14:30",
             "endTime": "15:15",
-            "name": "CyberSec",
-            "room": "Conf-Rooms",
+            "name": "AppSec meets devonfw",
+            "presenters": [18],
+            "room": "Millenium 4",
             "isBreak": false
           },
           {
@@ -144,8 +153,9 @@
             "streams": [1],
             "startTime": "15:30",
             "endTime": "16:15",
-            "name": "Real Project e.g. eprimo",
-            "room": "Conf-Rooms",
+            "name": "APIs & Microservices - Lessons learned using iPaaS @eprimo ",
+            "presenters": [8],
+            "room": "Millenium 1+2",
             "isBreak": false
           },
           {
@@ -153,8 +163,9 @@
             "streams": [2],
             "startTime": "15:30",
             "endTime": "16:15",
-            "name": "E2E-Testing",
-            "room": "Conf-Rooms",
+            "name": "Test automation - Why do we do it better and faster than you?",
+            "presenters": [13, 14],
+            "room": "Millenium 3",
             "isBreak": false
           },
           {
@@ -162,8 +173,9 @@
             "streams": [3],
             "startTime": "15:30",
             "endTime": "16:15",
-            "name": "Angular",
-            "room": "Conf-Rooms",
+            "name": "Reactive Frontend Architecture with Angular ",
+            "presenters": [19],
+            "room": "Millenium 4",
             "isBreak": false
           },
           {
@@ -195,16 +207,28 @@
           {
             "id": 122,
             "startTime": "19:00",
-            "endTime": "22:00",
+            "endTime": "20:30",
             "name": "Dinner",
+            "description": "Afterwards Open Bar light until 11pm",
             "isBreak": true
           },
           {
             "id": 123,
             "startTime": "20:00",
             "endTime": "21:00",
-            "name": "Firesite Chat (2 parallel topics)",
-            "isBreak": true
+            "presenters": "NN",
+            "room": "Millenium 3",
+            "name": "Firesite Chat - tbd",
+            "isBreak": false
+          },
+          {
+            "id": 124,
+            "startTime": "20:00",
+            "endTime": "21:00",
+            "presenters": [20],
+            "room": "Millenium 4",
+            "name": "Firesite Chat - Delivery Management meets Architects",
+            "isBreak": false
           }
         ]
       },
@@ -314,6 +338,8 @@
             "startTime": "20:00",
             "endTime": "21:30",
             "name": "Wroclaw City Night Sightseeing",
+            "description": "2 groups - German and English language",
+            "room": "Lobby",
             "isBreak": true
           }
         ]
@@ -325,13 +351,24 @@
         "timeSlots": [
           {
             "id": 301,
-            "startTime": "08:30",
+            "startTime": "08:00",
             "endTime": "12:00",
-            "name": "Al Hackathon / Devonfw-Bootstrap / Continuus Coffee",
-            "isBreak": true
+            "name": "AI Hackathon / Continuos Coffee",
+            "presenters": "Al Community",
+            "room": "Plenum",
+            "isBreak": false
           },
           {
             "id": 302,
+            "startTime": "08:00",
+            "endTime": "12:00",
+            "name": "Devonfw-Bootstrap / Continuos Coffee",
+            "presenters": [9],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 303,
             "startTime": "12:00",
             "endTime": "13:00",
             "name": "Lunch",
@@ -345,12 +382,12 @@
       {
         "id": 1,
         "name": "Hype",
-        "color": "#0070ad"
+        "color": "#ff304c"
       },
       {
         "id": 2,
         "name": "iCSD",
-        "color": "#ff304c"
+        "color": "#0070ad"
       },
       {
         "id": 3,
@@ -377,6 +414,70 @@
       {
         "id": 4,
         "name": "Michael Schulte"
+      },
+      {
+        "id": 5,
+        "name": "Krystian Granatowski"
+      },
+      {
+        "id": 6,
+        "name": "Arkadiusz Maciejowski"
+      },
+      {
+        "id": 7,
+        "name": "Jakob Boos"
+      },
+      {
+        "id": 8,
+        "name": "Martin Swientek"
+      },
+      {
+        "id": 9,
+        "name": "Iwan Rochus Van Der Kleijn"
+      },
+      {
+        "id": 10,
+        "name": "Benoît Hannebicq"
+      },
+      {
+        "id": 11,
+        "name": "Uwe Hantzsche"
+      },
+      {
+        "id": 12,
+        "name": "Stefano Rossini"
+      },
+      {
+        "id": 13,
+        "name": "Żaneta Nawrot"
+      },
+      {
+        "id": 14,
+        "name": "Łukasz Stefaniszyn"
+      },
+      {
+        "id": 15,
+        "name": "Ufer Jonathan"
+      },
+      {
+        "id": 16,
+        "name": "Marek Matczak"
+      },
+      {
+        "id": 17,
+        "name": "Bartłomiej Pietrowski"
+      },
+      {
+        "id": 18,
+        "name": "Marek Puchalski"
+      },
+      {
+        "id": 19,
+        "name": "Philip Schmökel"
+      },
+      {
+        "id": 20,
+        "name": "Nico Schmidt-Offhaus"
       }
     ]
   }
