@@ -225,7 +225,7 @@
             "id": 124,
             "startTime": "20:00",
             "endTime": "21:00",
-            "presenters": [21],
+            "presenters": [27],
             "room": "Millenium 4",
             "name": "Firesite Chat: Microservices - a business architecture challenge",
             "isBreak": false
@@ -394,95 +394,164 @@
         "name": "Tech",
         "color": "#95e616"
       }
-    ],
-    
-    "presenters": [
-      {
-        "id": 1,
-        "name": "Marco Rose"
-      },
-      {
-        "id": 2,
-        "name": "Piotr Poprawski",
-        "position": "Vice President",
-        "organisation": "Capgemini Poland"
-      },
-      {
-        "id": 3,
-        "name": "Pierre Marchand"
-      },
-      {
-        "id": 4,
-        "name": "Michael Schulte"
-      },
-      {
-        "id": 5,
-        "name": "Krystian Granatowski"
-      },
-      {
-        "id": 6,
-        "name": "Arkadiusz Maciejowski"
-      },
-      {
-        "id": 7,
-        "name": "Jakob Boos"
-      },
-      {
-        "id": 8,
-        "name": "Martin Swientek"
-      },
-      {
-        "id": 9,
-        "name": "Iwan Rochus Van Der Kleijn"
-      },
-      {
-        "id": 10,
-        "name": "Benoît Hannebicq"
-      },
-      {
-        "id": 11,
-        "name": "Uwe Hantzsche"
-      },
-      {
-        "id": 12,
-        "name": "Stefano Rossini"
-      },
-      {
-        "id": 13,
-        "name": "Żaneta Nawrot"
-      },
-      {
-        "id": 14,
-        "name": "Łukasz Stefaniszyn"
-      },
-      {
-        "id": 15,
-        "name": "Ufer Jonathan"
-      },
-      {
-        "id": 16,
-        "name": "Marek Matczak"
-      },
-      {
-        "id": 17,
-        "name": "Bartłomiej Pietrowski"
-      },
-      {
-        "id": 18,
-        "name": "Marek Puchalski"
-      },
-      {
-        "id": 19,
-        "name": "Philip Schmökel"
-      },
-      {
-        "id": 20,
-        "name": "Nico Schmidt-Offhaus"
-      },
-      {
-        "id": 21,
-        "name": "Holger Cermann"
-      }
     ]
-  }
+  },
+
+  "workshopStreams": [
+    {
+      "id": 1,
+      "name": "Hybrid Architecture Software Solutions on SAP Technology Stack",
+      "description": "We will work on an architecture pattern for Hybrid Architecture Software Solutions, with special attention on enterprise capabilities (non-functional requirements, e.g. Transaction Handling, scalability). For this aim, we will bring in our competencies and experience of the different practices and also consider building on existing components like DEVON. The goal is to develop a pattern that qualifies us as the partner-of-choice for S/4-migration and -strategy projects.",
+      "leaders": [21, 7],
+      "room": "Millenium 4"
+    },
+    {
+      "id": 2,
+      "name": "Digital Platforms",
+      "description": "In the cluster „Design for Digital“, Capgemini’s Technovision postulates that enterprises need to provide a compelling Digital Platform which allows to rapidly build solutions while leveraging enterprise-grade data and services. In that stream we want to get an overview, what the concept of a Digital Platform can be in practice for our development projects and how it is linked to the Platform as a Service offerings (xPaaS) that can be found on the market.",
+      "leaders": [22],
+      "room": "Millenium 5 + Słodowa"
+    },
+    {
+      "id": 3,
+      "name": "Work like Startups - Inception & Industrialization",
+      "description": "What is our answer to digital transformation at our clients? Often, such transformations are driven by start-ups or agencies which offer customer centric approaches like ideation or MVPs as their differentiators. How can we match-up, stay fast and at the same time bring in core competencies like sustainable architectures and expertise in software development (but now in an agile setting). We will discuss best practices from our projects and find out which actions are required to tackle the new challenges.",
+      "leaders": [23, 24],
+      "room": "Millenium 1+2"
+    },
+    {
+      "id": 4,
+      "name": "Data science in real (software developers) life",
+      "description": "Are Data Science and Machine Learning only for big data and natural language processing? Besides this obvious usage scenarios, we will focus on how to use data science in daily software engineering activities to speed up and improve software project processes and more specific on how to leverage machine learning in development, quality assurance, project management and support tasks. Additionally, we will discuss and work on ways to improve the management and craftsmanship of data science projects.",
+      "leaders": [25, 6],
+      "room": "Uniwersytecka"
+    },
+    {
+      "id": 5,
+      "name": "CSD meets Hype",
+      "description": "Microservices, Cloud, Reactive Platforms, Event Sourcing… What connects them all? There was much hype around them a few years ago. Nowadays many both new and existing CSD projects go for at least one of those (formerly being) trends. This stream is a great occasion to discuss about the current trends such as the blockchain or virtual and augmented reality which have started to appear in CSD projects and will appear more frequently in the future. The goal is to focus on business use cases of the trends as well as technologies behind them.",
+      "leaders": [16],
+      "room": "Millenium 3"
+    },
+    {
+      "id": 6,
+      "name": "The New Standard for CSD Effort Estimation",
+      "description": "We will develop the new standard for the bottom up effort estimation for CSD software development. It shall be a new release of the old but still in use ePM template. The new enhancements shall provide default estimations for typical deliverables based on a devonfw technology stack. Further improvements shall support typical estimation processes and the derivation of an offshore estimation out of a pure on-/nearshore estimation.",
+      "leaders": [26],
+      "room": "Grunwaldzka"
+    }
+  ],
+
+  "presenters": [
+    {
+      "id": 1,
+      "name": "Marco Rose"
+    },
+    {
+      "id": 2,
+      "name": "Piotr Poprawski",
+      "position": "Vice President",
+      "organisation": "Capgemini Poland"
+    },
+    {
+      "id": 3,
+      "name": "Pierre Marchand"
+    },
+    {
+      "id": 4,
+      "name": "Michael Schulte"
+    },
+    {
+      "id": 5,
+      "name": "Krystian Granatowski"
+    },
+    {
+      "id": 6,
+      "name": "Arkadiusz Maciejowski"
+    },
+    {
+      "id": 7,
+      "name": "Jakob Boos"
+    },
+    {
+      "id": 8,
+      "name": "Martin Swientek"
+    },
+    {
+      "id": 9,
+      "name": "Iwan Rochus Van Der Kleijn"
+    },
+    {
+      "id": 10,
+      "name": "Benoît Hannebicq"
+    },
+    {
+      "id": 11,
+      "name": "Uwe Hantzsche"
+    },
+    {
+      "id": 12,
+      "name": "Stefano Rossini"
+    },
+    {
+      "id": 13,
+      "name": "Żaneta Nawrot"
+    },
+    {
+      "id": 14,
+      "name": "Łukasz Stefaniszyn"
+    },
+    {
+      "id": 15,
+      "name": "Ufer Jonathan"
+    },
+    {
+      "id": 16,
+      "name": "Marek Matczak"
+    },
+    {
+      "id": 17,
+      "name": "Bartłomiej Pietrowski"
+    },
+    {
+      "id": 18,
+      "name": "Marek Puchalski"
+    },
+    {
+      "id": 19,
+      "name": "Philip Schmökel"
+    },
+    {
+      "id": 20,
+      "name": "Nico Schmidt-Offhaus"
+    },
+    {
+      "id": 21,
+      "name": "Heiko Jung"
+    },
+    {
+      "id": 22,
+      "name": "Andreas Hess"
+    },
+    {
+      "id": 23,
+      "name": "Robert Geisler"
+    },
+    {
+      "id": 24,
+      "name": "Michael von Lepel"
+    },
+    {
+      "id": 25,
+      "name": "Marek Majchrzak"
+    },
+    {
+      "id": 26,
+      "name": "Karl Prott"
+    },
+    {
+      "id": 27,
+      "name": "Holger Cermann"
+    }
+  ]
 }
