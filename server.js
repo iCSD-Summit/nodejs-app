@@ -5,6 +5,7 @@ const path = require('path');
 const webpush = require('web-push');
 const file = require('fs');
 const bodyParser = require('body-parser');
+const scheduler = require('./scheduler');
 
 const app = express();
 const port = process.env.port || 1337;
@@ -13,7 +14,7 @@ const subscriptionsFile = path.join(__dirname, 'subscriptions', 'subscriptions.j
 
 const pushOptions = {
     vapidDetails: {
-        subject: 'https://www.capgemini.com/pl-pl/',
+        subject: 'http://www.google.com',
         publicKey: 'BMjRh7QofnoNTHxNAoM8wrfsCdEJH39JNg-P-JMnvyIOcuybzJcvwQt8wM6yPJad-phACdKLoGocjCfs9tZ4dL4',
         privateKey: '03xK2AyoX_eZNyx7tJm8972okURODqimuTOln71v55A'
     },
@@ -24,17 +25,29 @@ app.use(nocache());
 app.use(express.static(root));
 app.use(bodyParser.json());
 
+// DIAGNOSTICS
 app.get('/say-hello', function (req, res) {
     res.send('Hello World!');
+});
+
+app.get('/whattimeisit', function(req, res) {
+    res.send(new Date(Date.now()).toString());
+});
+
+// REMOTE SCHEDULER
+app.get('/schedule/:year/:month/:day/:hour/:min/:sec/:title/:msg/:type', function(req, res) {
+    scheduler.schedule(req.params.year, req.params.month, req.params.day, req.params.hour, req.params.min, req.params.sec, () => push(req.params.title, req.params.msg, req.params.type)); 
+    res.send('Task scheduled');
 });
 
 app.use(fallback('index.html', {root: root}));
 
 // PUSH NOTIFICATION
-app.post('/push/:title/:msg', (req, res) => {
+app.post('/push/:title/:msg/:type', (req, res) => {
     var title = req.params.title,
-        msg = req.params.msg;
-    push(title, msg);
+        msg = req.params.msg,
+        type = req.params.type;
+    push(title, msg, type);
     res.send(`Sent ${title}: ${msg}.`);
 });
 
@@ -42,8 +55,11 @@ app.post('/push/:title/:msg', (req, res) => {
 app.post('/registerSubscription', (req, res) => { 
     getAllSubscriptions().then((data) => {
         let subscriptions = data;
-        subscriptions.push(req.body.subscription);
-        return saveSubscription(subscriptions);
+        if (!checkSubscription(subscriptions, req.body)) {
+            subscriptions.push(req.body);
+            return saveSubscription(subscriptions);
+        }
+        return;
     })
     .then(() => {
         res.status(200).send({success: true});
@@ -55,7 +71,7 @@ app.post('/registerSubscription', (req, res) => {
 
 app.post('/unregisterSubscription', (req, res) => {
     getAllSubscriptions().then((data) => {
-        let subscriptionObject = req.body.subscription;
+        let subscriptionObject = req.body;
         let subscriptions = data;
 
         subscriptions = subscriptions.filter(el => el.endpoint !== subscriptionObject.endpoint);
@@ -97,45 +113,78 @@ function saveSubscription(subscriptions) {
     });
 }
 
-function push(title, msg) {
+function checkSubscription(subscriptions, subscriptionObject) {
+    return subscriptions.findIndex(sub => sub.endpoint === subscriptionObject.endpoint) >= 0;
+} 
+
+function removeSubscription(endpoint) {
+    getAllSubscriptions().then((data) => {        
+        let subscriptions = data;
+
+        subscriptions = subscriptions.filter(el => el.endpoint !== endpoint);
+        return saveSubscription(subscriptions)
+    })
+    .catch();
+}
+
+function push(title, msg, type) {
+    let icon = getIcon(type);
     getAllSubscriptions().then((subscriptions) => {
         subscriptions.forEach(subscriber => {
-        console.log(`Sending to ${subscriber.endpoint}...`);
         webpush.sendNotification(
             subscriber,
-            JSON.stringify({title: title,
-                            body: msg,
-                            icon: '/images/coffee.png',
-                            badge: '/images/coffee-beans.png',
-                            vibrate: [200, 100, 200, 100, 200, 100, 200]
-                            }),
-            options).catch((err) => {
-                console.log('Error while pushing to [' + subscriber.endpoint + ']: ' + err.statusCode + ', ' + err.body);
+            JSON.stringify({
+                "notification": {
+                    "title": title,
+                    "body": msg,
+                    "icon": icon,
+                    "vibrate": [100, 50, 100],
+                    "data": {
+                        "dateOfArrival": Date.now(),
+                        "primaryKey": 1
+                    }    
+                }
+            }),
+                pushOptions)
+                .then(() => {
+                    //console.log(`Sending to ${subscriber.endpoint}...`);
+                }).catch((err) => {
+                    console.log('Error while pushing to [' + subscriber.endpoint + '] endpoint will be removed from subscribers list');
+                    removeSubscription(subscriber.endpoint);
             });
         });
     });
 }
 
-// function schedule(day, h, m, type) {
-//     nodeSchedule.scheduleJob(new Date(2017, 2, day, h, m, 0), () => {
-//         console.log(`Sending ${type}`);
-//         push('Break', type);
-//     });
-// }
-//
-// schedule(23, 12, 15, 'Lunch');
-// schedule(23, 15, 30, 'Coffee Break');
-// schedule(24, 10, 30, 'Coffee Break');
-// schedule(24, 12, 00, 'Lunch');
-// schedule(24, 15, 45, 'Coffee Break');
-// schedule(25, 10, 30, 'Coffee Break');
-// schedule(25, 12, 30, 'Lunch');
-
+function getIcon(type) {
+    switch (type.toLowerCase()) {
+        case "coffee":
+            return "./assets/coffee.png";
+        case "lunch":
+            return "./assets/lunch.png";
+        case "alert":
+            return "./assets/alert.png";
+        default:
+            return "./assets/logo.png";
+    }
+}
 
 const server = app.listen(port, function () {
     const address = server.address();
     const host = address.address;
     const port = address.port;
+
+    // schedule meals
+    scheduler.schedule(2018, 2, 15, 12, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for lunch!", "lunch")); 
+    scheduler.schedule(2018, 2, 15, 15, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee break", "coffee"));
+    scheduler.schedule(2018, 2, 15, 15, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Dinner time!", "lunch"));
+
+    scheduler.schedule(2018, 2, 16, 9, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
+    scheduler.schedule(2018, 2, 16, 11, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time", "lunch")); 
+    scheduler.schedule(2018, 2, 16, 15, 45, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
+    scheduler.schedule(2018, 2, 16, 18, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for dinner!", "lunch"));
+    
+    scheduler.schedule(2018, 2, 17, 12, 00, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time!", "lunch"));
 
     console.log('Example app listening at http://%s:%s', host, port);
 });
