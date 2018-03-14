@@ -209,25 +209,25 @@
             "startTime": "19:00",
             "endTime": "20:30",
             "name": "Dinner",
-            "description": "Afterwards Open Bar light until 11pm",
+            "description": "Afterwards Open Bar light until 12pm",
             "isBreak": true
           },
           {
             "id": 123,
             "startTime": "20:00",
             "endTime": "21:00",
-            "presenters": "NN",
+            "presenters": [20],
             "room": "Millenium 3",
-            "name": "Firesite Chat - tbd",
+            "name": "Firesite Chat with Head of DM: Hunting the underrun :-)",
             "isBreak": false
           },
           {
             "id": 124,
             "startTime": "20:00",
             "endTime": "21:00",
-            "presenters": [20],
+            "presenters": [21],
             "room": "Millenium 4",
-            "name": "Firesite Chat - Delivery Management meets Architects",
+            "name": "Firesite Chat: Microservices - a business architecture challenge",
             "isBreak": false
           }
         ]
@@ -305,7 +305,7 @@
             "id": 209,
             "startTime": "15:45",
             "endTime": "16:00",
-            "name": "Coffee break",
+            "name": "Coffee break / Snacks",
             "isBreak": true
           },
           {
@@ -478,6 +478,10 @@
       {
         "id": 20,
         "name": "Nico Schmidt-Offhaus"
+      },
+      {
+        "id": 21,
+        "name": "Holger Cermann"
       }
     ]
   }
