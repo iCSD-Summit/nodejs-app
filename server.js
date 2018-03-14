@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const scheduler = require('./scheduler');
 
 const app = express();
-const port = process.env.port || 1337;
+const port = process.env.port || 5555;
 const root = path.join(__dirname, 'public');
 const subscriptionsFile = path.join(__dirname, 'subscriptions', 'subscriptions.json');
 
@@ -20,12 +20,17 @@ const pushOptions = {
     },
     TTL: 60 * 60
 }
+const currentEvent = require('./data/event.json');
 
 app.use(nocache());
 app.use(express.static(root));
 app.use(bodyParser.json());
 
 // DIAGNOSTICS
+app.get('/api/event', function (req, res) {
+    res.json(currentEvent);
+});
+
 app.get('/say-hello', function (req, res) {
     res.send('Hello World!');
 });

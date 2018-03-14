@@ -1,0 +1,488 @@
+{
+  "general": {
+    "app" : {
+      "mainTitle" : "Apps DE Summit 2018"
+    }
+  },
+  
+  "agenda": {
+    "days": [
+      {
+        "id": 1,
+        "date": "2018-03-15",
+        "timeSlots": [
+          {
+            "id": 101,
+            "startTime": "09:30",
+            "endTime": "10:00",
+            "name": "Registration & Coffee",
+            "isBreak": true
+          },
+          {
+            "id": 102,
+            "startTime": "10:00",
+            "endTime": "10:15",
+            "name": "Welcome + Organisation",
+            "presenters": [1, 2],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 103,
+            "startTime": "10:15",
+            "endTime": "10:40",
+            "name": "Hybrid Communities",
+            "presenters": [1],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 104,
+            "startTime": "10:40",
+            "endTime": "12:00",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 105,
+            "startTime": "12:00",
+            "endTime": "13:00",
+            "name": "Lunch",
+            "isBreak": true
+          },
+          {
+            "id": 106,
+            "streams": [1],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "Enhancing the reality - AR and VR in practice",
+            "presenters": [5],
+            "room": "Millenium 1+2",
+            "isBreak": false
+          },
+          {
+            "id": 107,
+            "streams": [2],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "State of and roadmap for iCSD / devonfw",
+            "presenters": [9],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 108,
+            "streams": [3],
+            "startTime": "13:00",
+            "endTime": "13:45",
+            "name": "Specification in Agile Projects",
+            "presenters": [15],
+            "room": "Millenium 4",
+            "isBreak": false
+          },
+          {
+            "id": 109,
+            "streams": [1],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "Data Science in Real Life",
+            "presenters": [6],
+            "room": "Millenium 1+2",
+            "isBreak": false
+          },
+          {
+            "id": 110,
+            "streams": [2],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "Production Line: DevSecOps in a box",
+            "presenters": [10, 11],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 111,
+            "streams": [3],
+            "startTime": "13:45",
+            "endTime": "14:30",
+            "name": "Is your Web app better than mine?",
+            "presenters": [17, 16],
+            "room": "Millenium 4",
+            "isBreak": false
+          },
+          {
+            "id": 112,
+            "streams": [1],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "Blockchain - Hype or Chance?",
+            "presenters": [7],
+            "room": "Millenium 1+2",
+            "isBreak": false
+          },
+          {
+            "id": 113,
+            "streams": [2],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "Devonfw and Production Line: A Success Story for Italian Projects",
+            "presenters": [12],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 114,
+            "streams": [3],
+            "startTime": "14:30",
+            "endTime": "15:15",
+            "name": "AppSec meets devonfw",
+            "presenters": [18],
+            "room": "Millenium 4",
+            "isBreak": false
+          },
+          {
+            "id": 115,
+            "startTime": "15:15",
+            "endTime": "15:30",
+            "name": "Coffee break",
+            "isBreak": true
+          },
+          {
+            "id": 116,
+            "streams": [1],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "APIs & Microservices - Lessons learned using iPaaS @eprimo ",
+            "presenters": [8],
+            "room": "Millenium 1+2",
+            "isBreak": false
+          },
+          {
+            "id": 117,
+            "streams": [2],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "Test automation - Why do we do it better and faster than you?",
+            "presenters": [13, 14],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 118,
+            "streams": [3],
+            "startTime": "15:30",
+            "endTime": "16:15",
+            "name": "Reactive Frontend Architecture with Angular ",
+            "presenters": [19],
+            "room": "Millenium 4",
+            "isBreak": false
+          },
+          {
+            "id": 119,
+            "startTime": "16:15",
+            "endTime": "17:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 120,
+            "startTime": "17:45",
+            "endTime": "18:25",
+            "name": "Stream Goals (each 6 min sharp)",
+            "presenters": "Streamleads",
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 121,
+            "startTime": "18:25",
+            "endTime": "18:30",
+            "name": "Closing of Day 1",
+            "presenters": [1],
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 122,
+            "startTime": "19:00",
+            "endTime": "20:30",
+            "name": "Dinner",
+            "description": "Afterwards Open Bar light until 12pm",
+            "isBreak": true
+          },
+          {
+            "id": 123,
+            "startTime": "20:00",
+            "endTime": "21:00",
+            "presenters": [20],
+            "room": "Millenium 3",
+            "name": "Firesite Chat with Head of DM: Hunting the underrun :-)",
+            "isBreak": false
+          },
+          {
+            "id": 124,
+            "startTime": "20:00",
+            "endTime": "21:00",
+            "presenters": [21],
+            "room": "Millenium 4",
+            "name": "Firesite Chat: Microservices - a business architecture challenge",
+            "isBreak": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "date": "2018-03-16",
+        "timeSlots": [
+          {
+            "id": 201,
+            "startTime": "08:00",
+            "endTime": "09:30",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 202,
+            "startTime": "09:30",
+            "endTime": "09:45",
+            "name": "Coffee break",
+            "isBreak": true
+          },
+          {
+            "id": 203,
+            "startTime": "09:45",
+            "endTime": "10:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 204,
+            "startTime": "10:45",
+            "endTime": "11:30",
+            "name": "Keynote \"Automation\"",
+            "room": "Plenum",
+            "presenters": [3],
+            "isBreak": false
+          },
+          {
+            "id": 205,
+            "startTime": "11:30",
+            "endTime": "12:30",
+            "name": "Lunch",
+            "isBreak": true
+          },
+          {
+            "id": 206,
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "name": "TV-Meeting bidirectional",
+            "room": "Plenum",
+            "presenters": [4],
+            "isBreak": false
+          },
+          {
+            "id": 207,
+            "startTime": "13:30",
+            "endTime": "13:45",
+            "name": "Photo Session",
+            "room": "Outside",
+            "presenters": "Photographer NN",
+            "isBreak": false
+          },
+          {
+            "id": 208,
+            "startTime": "13:45",
+            "endTime": "15:45",
+            "name": "Stream session",
+            "room": "Stream-Rooms",
+            "isBreak": false
+          },
+          {
+            "id": 209,
+            "startTime": "15:45",
+            "endTime": "16:00",
+            "name": "Coffee break / Snacks",
+            "isBreak": true
+          },
+          {
+            "id": 210,
+            "startTime": "16:00",
+            "endTime": "17:00",
+            "name": "Stream report out (6*10min)",
+            "room": "Plenum",
+            "presenters": "Streamleads",
+            "isBreak": false
+          },
+          {
+            "id": 211,
+            "startTime": "17:00",
+            "endTime": "17:30",
+            "name": "Closing of the summit",
+            "room": "Plenum",
+            "presenters": [1],
+            "isBreak": false
+          },
+          {
+            "id": 212,
+            "startTime": "18:30",
+            "endTime": "22:00",
+            "name": "Dinner",
+            "isBreak": true
+          },
+          {
+            "id": 213,
+            "startTime": "20:00",
+            "endTime": "21:30",
+            "name": "Wroclaw City Night Sightseeing",
+            "description": "2 groups - German and English language",
+            "room": "Lobby",
+            "isBreak": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "date": "2018-03-17",
+        "description": "voluntary participation",
+        "timeSlots": [
+          {
+            "id": 301,
+            "startTime": "08:00",
+            "endTime": "12:00",
+            "name": "AI Hackathon / Continuos Coffee",
+            "presenters": "Al Community",
+            "room": "Plenum",
+            "isBreak": false
+          },
+          {
+            "id": 302,
+            "startTime": "08:00",
+            "endTime": "12:00",
+            "name": "Devonfw-Bootstrap / Continuos Coffee",
+            "presenters": [9],
+            "room": "Millenium 3",
+            "isBreak": false
+          },
+          {
+            "id": 303,
+            "startTime": "12:00",
+            "endTime": "13:00",
+            "name": "Lunch",
+            "isBreak": true
+          }
+        ]
+      }
+    ],
+
+    "streams": [
+      {
+        "id": 1,
+        "name": "Hype",
+        "color": "#ff304c"
+      },
+      {
+        "id": 2,
+        "name": "iCSD",
+        "color": "#0070ad"
+      },
+      {
+        "id": 3,
+        "name": "Tech",
+        "color": "#95e616"
+      }
+    ],
+    
+    "presenters": [
+      {
+        "id": 1,
+        "name": "Marco Rose"
+      },
+      {
+        "id": 2,
+        "name": "Piotr Poprawski",
+        "position": "Vice President",
+        "organisation": "Capgemini Poland"
+      },
+      {
+        "id": 3,
+        "name": "Pierre Marchand"
+      },
+      {
+        "id": 4,
+        "name": "Michael Schulte"
+      },
+      {
+        "id": 5,
+        "name": "Krystian Granatowski"
+      },
+      {
+        "id": 6,
+        "name": "Arkadiusz Maciejowski"
+      },
+      {
+        "id": 7,
+        "name": "Jakob Boos"
+      },
+      {
+        "id": 8,
+        "name": "Martin Swientek"
+      },
+      {
+        "id": 9,
+        "name": "Iwan Rochus Van Der Kleijn"
+      },
+      {
+        "id": 10,
+        "name": "Benoît Hannebicq"
+      },
+      {
+        "id": 11,
+        "name": "Uwe Hantzsche"
+      },
+      {
+        "id": 12,
+        "name": "Stefano Rossini"
+      },
+      {
+        "id": 13,
+        "name": "Żaneta Nawrot"
+      },
+      {
+        "id": 14,
+        "name": "Łukasz Stefaniszyn"
+      },
+      {
+        "id": 15,
+        "name": "Ufer Jonathan"
+      },
+      {
+        "id": 16,
+        "name": "Marek Matczak"
+      },
+      {
+        "id": 17,
+        "name": "Bartłomiej Pietrowski"
+      },
+      {
+        "id": 18,
+        "name": "Marek Puchalski"
+      },
+      {
+        "id": 19,
+        "name": "Philip Schmökel"
+      },
+      {
+        "id": 20,
+        "name": "Nico Schmidt-Offhaus"
+      },
+      {
+        "id": 21,
+        "name": "Holger Cermann"
+      }
+    ]
+  }
+}
