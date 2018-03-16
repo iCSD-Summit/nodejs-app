@@ -180,16 +180,16 @@ const server = app.listen(port, function () {
     const port = address.port;
 
     // schedule meals
-    scheduler.schedule(2018, 2, 15, 12, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for lunch!", "lunch")); 
-    scheduler.schedule(2018, 2, 15, 15, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee break", "coffee"));
-    scheduler.schedule(2018, 2, 15, 15, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Dinner time!", "lunch"));
+    scheduler.schedule(2018, 2, 15, 11, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for lunch!", "lunch"));
+    scheduler.schedule(2018, 2, 15, 14, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee break", "coffee"));
+    scheduler.schedule(2018, 2, 15, 14, 15, 0, () => push("Architects- and Software Engineers Summit 2018", "Dinner time!", "lunch"));
 
-    scheduler.schedule(2018, 2, 16, 9, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
-    scheduler.schedule(2018, 2, 16, 11, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time", "lunch")); 
-    scheduler.schedule(2018, 2, 16, 15, 45, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
-    scheduler.schedule(2018, 2, 16, 18, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for dinner!", "lunch"));
+    scheduler.schedule(2018, 2, 16, 8, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
+    scheduler.schedule(2018, 2, 16, 10, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time", "lunch"));
+    scheduler.schedule(2018, 2, 16, 14, 45, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
+    scheduler.schedule(2018, 2, 16, 17, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for dinner!", "lunch"));
     
-    scheduler.schedule(2018, 2, 17, 12, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time!", "lunch"));
+    scheduler.schedule(2018, 2, 17, 11, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time!", "lunch"));
 
     console.log('Example app listening at http://%s:%s', host, port);
 });
