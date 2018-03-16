@@ -189,7 +189,7 @@ const server = app.listen(port, function () {
     scheduler.schedule(2018, 2, 16, 14, 45, 0, () => push("Architects- and Software Engineers Summit 2018", "Coffee Break", "coffee"));
     scheduler.schedule(2018, 2, 16, 17, 30, 0, () => push("Architects- and Software Engineers Summit 2018", "Time for dinner!", "lunch"));
     
-    scheduler.schedule(2018, 2, 17, 11, 00, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time!", "lunch"));
+    scheduler.schedule(2018, 2, 17, 11, 0, 0, () => push("Architects- and Software Engineers Summit 2018", "Lunch time!", "lunch"));
 
     console.log('Example app listening at http://%s:%s', host, port);
 });
