@@ -10,7 +10,7 @@
         "https://icsd-summit.azurewebsites.net/index.html",
         "https://icsd-summit.azurewebsites.net/assets/favicon.ico",
         "https://icsd-summit.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://icsd-summit.azurewebsites.net/main.1d5268057e46b71c6381.bundle.js",
+        "https://icsd-summit.azurewebsites.net/main.f5b8da89eadb61a1dcb9.bundle.js",
         "https://icsd-summit.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js",
         "https://icsd-summit.azurewebsites.net/styles.74bd7a4c98b4957ee24d.bundle.css"
       ],
@@ -29,11 +29,13 @@
         "https://icsd-summit.azurewebsites.net/assets/coffee.png",
         "https://icsd-summit.azurewebsites.net/assets/favicon-16x16.png",
         "https://icsd-summit.azurewebsites.net/assets/favicon-32x32.png",
+        "https://icsd-summit.azurewebsites.net/assets/iCSD-Imagetype-HQ-White.png",
         "https://icsd-summit.azurewebsites.net/assets/logo.png",
         "https://icsd-summit.azurewebsites.net/assets/lunch.png",
         "https://icsd-summit.azurewebsites.net/assets/manifest.json",
         "https://icsd-summit.azurewebsites.net/assets/mstile-150x150.png",
-        "https://icsd-summit.azurewebsites.net/assets/safari-pinned-tab.svg"
+        "https://icsd-summit.azurewebsites.net/assets/safari-pinned-tab.svg",
+        "https://icsd-summit.azurewebsites.net/assets/whatsapp.svg"
       ],
       "patterns": []
     },
@@ -64,22 +66,24 @@
   "hashTable": {
     "https://icsd-summit.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
     "https://icsd-summit.azurewebsites.net/assets/alert.png": "a87603052936bffd975dc5a0aacaa9360c10f9b4",
-    "https://icsd-summit.azurewebsites.net/main.1d5268057e46b71c6381.bundle.js": "574eea13c8a8790dbab7acc0da8bca83d07180dc",
+    "https://icsd-summit.azurewebsites.net/main.f5b8da89eadb61a1dcb9.bundle.js": "70c55e69806baadceb888568e5586cc37386c9e5",
     "https://icsd-summit.azurewebsites.net/assets/android-chrome-192x192.png": "a4f76cd074f91a7f38c8e088bfa3f5ae99d81ff4",
     "https://icsd-summit.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
     "https://icsd-summit.azurewebsites.net/assets/android-chrome-512x512.png": "feea60dcedf78d257772afade90f7e87dfca4d27",
     "https://icsd-summit.azurewebsites.net/styles.74bd7a4c98b4957ee24d.bundle.css": "e02e557c4247d6afe88606472fe34db283544eac",
     "https://icsd-summit.azurewebsites.net/assets/apple-touch-icon.png": "68afb35370e5b90d07a68194b3d44b596d207f2e",
-    "https://icsd-summit.azurewebsites.net/index.html": "0c843c4127d06bc7d7c174fd149174b556f0f9c9",
+    "https://icsd-summit.azurewebsites.net/index.html": "3fdd232f20df1806423162d06b2c5fd0b69135c7",
     "https://icsd-summit.azurewebsites.net/assets/browserconfig.xml": "9b46c91949cde2093cf9de45e665174b72840d22",
     "https://icsd-summit.azurewebsites.net/assets/favicon.ico": "0348a6c1dc488ac96fa9fb2eef438e3bbd18d288",
     "https://icsd-summit.azurewebsites.net/assets/coffee.png": "6fd508377940d7816360d0a1819187b3071f2487",
     "https://icsd-summit.azurewebsites.net/assets/favicon-16x16.png": "ae52a2ffe342a433688010d02207e47b6d1aaec7",
     "https://icsd-summit.azurewebsites.net/assets/favicon-32x32.png": "c38a431700851d549aa6a8f27a59593c54e63e57",
+    "https://icsd-summit.azurewebsites.net/assets/iCSD-Imagetype-HQ-White.png": "22262fc32a9f3885ec7acdb8ad5cbf8d212c07ee",
     "https://icsd-summit.azurewebsites.net/assets/logo.png": "aaea9b951050a786c6ec869b7ba0bd0f0e3271b9",
     "https://icsd-summit.azurewebsites.net/assets/lunch.png": "cfa32bc7de38c11b17343c173810a7a238af1d24",
-    "https://icsd-summit.azurewebsites.net/assets/manifest.json": "c5014f09d19b78e3969c333d2d5f3415ceb4259b",
+    "https://icsd-summit.azurewebsites.net/assets/manifest.json": "7bfc532cf8a2bf68318275309539e9861e08c5e0",
     "https://icsd-summit.azurewebsites.net/assets/mstile-150x150.png": "a8fa51aa94b5d14c0e935c7da3f730655da69768",
-    "https://icsd-summit.azurewebsites.net/assets/safari-pinned-tab.svg": "c2d28c860454f0958dcbd4867c09251f01779da6"
+    "https://icsd-summit.azurewebsites.net/assets/safari-pinned-tab.svg": "c2d28c860454f0958dcbd4867c09251f01779da6",
+    "https://icsd-summit.azurewebsites.net/assets/whatsapp.svg": "5dbee22cde889444191a2126fbe217c460a2d889"
   }
 }
