@@ -274,7 +274,7 @@
     {
       "id": 1,
       "name": "Streaming / Event-based Architectures",
-      "description": "In this Stream we will discuss about Streaming and Event-based Architectures which became very popular recently. The contents of the stream will greatly depend on your contribution. The following questions may give us a guidance for that: 1) What differentiates streaming, event-oriented, messaging and “classical” architectures? 2) What a criteria for choosing one of those architectural approaches? 3) Which experiences do we have with those architectures in Capgemini? 4) What products are relevant in that area?",
+      "description": "In this Stream we will discuss about Streaming and Event-based Architectures which became very popular recently. The contents of the stream will greatly depend on your contribution. The following questions may give us a guidance for that:<ul><li>What differentiates streaming, event-oriented, messaging and “classical” architectures?</li><li>What a criteria for choosing one of those architectural approaches?</li><li>Which experiences do we have with those architectures in Capgemini?</li><li>What products are relevant in that area?</li></ul>",
       "leaders": [34, 35, 36, 46],
       "room": "18th October - N.1.8.3(1st floor) / 19th October - N.3.10.6(3rd floor)"
     },
@@ -302,7 +302,7 @@
     {
       "id": 5,
       "name": "Hands-on Coding",
-      "description": "In this stream we will cover the following topics: 1) Get the improvement done you always wanted to have. 2) Get support from experts to get started with project setup, github, pull-requestes and all things that may have prevented you from contributing. 3) Propose a concrete improvement that you can complete during the summit or at least bring to a proof-of-concept state. 4) At the end of the summit we want to have these improvements available as PRs or already merged into devonfw 5) Each new feature will be presented in a brief summary at the end of the summit to the audience. 6) You will have key-players available during the summit if there are design decisions to take on your way. 7) This stream is not limited to code centric features – you may also improve the devonfw homepage, methodology document or production line config for devon integration, etc.",
+      "description": "In this stream we will cover the following topics:<ul><li>Get the improvement done you always wanted to have.</li><li>Get support from experts to get started with project setup, github, pull-requestes and all things that may have prevented you from contributing.</li><li>Propose a concrete improvement that you can complete during the summit or at least bring to a proof-of-concept state.</li><li>At the end of the summit we want to have these improvements available as PRs or already merged into devonfw</li><li>Each new feature will be presented in a brief summary at the end of the summit to the audience.</li><li>You will have key-players available during the summit if there are design decisions to take on your way.</li><li>This stream is not limited to code centric features – you may also improve the devonfw homepage, methodology document or production line config for devon integration, etc.</li></ul>",
       "leaders": [43, 45, 50],
       "room": "18th October - Auditorium / 19th October - Auditorium"
     }
