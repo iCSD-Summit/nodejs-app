@@ -10,9 +10,13 @@
         "https://icsd-summit.azurewebsites.net/index.html",
         "https://icsd-summit.azurewebsites.net/assets/favicon.ico",
         "https://icsd-summit.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js",
+<<<<<<< HEAD
         "https://icsd-summit.azurewebsites.net/main.b0011893b475d7430020.bundle.js",
+=======
+        "https://icsd-summit.azurewebsites.net/main.a79782b302f8aae9917a.bundle.js",
+>>>>>>> 0d9e10be8585e2663d3f2c88ccb0478db138e425
         "https://icsd-summit.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js",
-        "https://icsd-summit.azurewebsites.net/styles.74bd7a4c98b4957ee24d.bundle.css"
+        "https://icsd-summit.azurewebsites.net/styles.20680bc34ca935252124.bundle.css"
       ],
       "patterns": []
     },
@@ -66,13 +70,21 @@
   "hashTable": {
     "https://icsd-summit.azurewebsites.net/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
     "https://icsd-summit.azurewebsites.net/assets/alert.png": "a87603052936bffd975dc5a0aacaa9360c10f9b4",
+<<<<<<< HEAD
     "https://icsd-summit.azurewebsites.net/main.b0011893b475d7430020.bundle.js": "21a36ee9dc5eb73e063a5317e400da825baf6236",
+=======
+    "https://icsd-summit.azurewebsites.net/main.a79782b302f8aae9917a.bundle.js": "01296923bad2bd64d48bd6117b3aa47d02ff5d4c",
+>>>>>>> 0d9e10be8585e2663d3f2c88ccb0478db138e425
     "https://icsd-summit.azurewebsites.net/assets/android-chrome-192x192.png": "a4f76cd074f91a7f38c8e088bfa3f5ae99d81ff4",
     "https://icsd-summit.azurewebsites.net/polyfills.fb8ad884215c65546efb.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
     "https://icsd-summit.azurewebsites.net/assets/android-chrome-512x512.png": "feea60dcedf78d257772afade90f7e87dfca4d27",
-    "https://icsd-summit.azurewebsites.net/styles.74bd7a4c98b4957ee24d.bundle.css": "e02e557c4247d6afe88606472fe34db283544eac",
+    "https://icsd-summit.azurewebsites.net/styles.20680bc34ca935252124.bundle.css": "433406a984d84dd33add5336be24c2cedb9163f6",
     "https://icsd-summit.azurewebsites.net/assets/apple-touch-icon.png": "68afb35370e5b90d07a68194b3d44b596d207f2e",
+<<<<<<< HEAD
     "https://icsd-summit.azurewebsites.net/index.html": "6b31f0763d743c378eb13332aea5a526f1cd01c5",
+=======
+    "https://icsd-summit.azurewebsites.net/index.html": "a914e431eca0bbb923cb4d42d3786e2bed6d108e",
+>>>>>>> 0d9e10be8585e2663d3f2c88ccb0478db138e425
     "https://icsd-summit.azurewebsites.net/assets/browserconfig.xml": "9b46c91949cde2093cf9de45e665174b72840d22",
     "https://icsd-summit.azurewebsites.net/assets/favicon.ico": "0348a6c1dc488ac96fa9fb2eef438e3bbd18d288",
     "https://icsd-summit.azurewebsites.net/assets/coffee.png": "6fd508377940d7816360d0a1819187b3071f2487",
