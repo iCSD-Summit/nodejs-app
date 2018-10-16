@@ -12,7 +12,7 @@
         "timeSlots": [
           {
             "id": 101,
-            "startTime": "08:30",
+            "startTime": "09:00",
             "endTime": "10:00",
             "name": "Welcome Coffee",
             "isBreak": true
@@ -22,7 +22,7 @@
             "startTime": "10:00",
             "endTime": "11:00",
             "name": "Opening",
-            "presenters": [9, 28, 29, 30, 31, 51],
+            "presenters": [52, 29, 9, 30, 31, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -53,24 +53,24 @@
             "id": 101,
             "startTime": "16:00",
             "endTime": "16:30",
-            "name": "Break",
+            "name": "Break (Snacks)",
             "isBreak": true
           },
           {
             "id": 106,
             "startTime": "16:30",
-            "endTime": "17:30",
+            "endTime": "17:15",
             "name": "Slot 1 Common Talk",
-            "presenters": [51],
+            "presenters": [53, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
           {
             "id": 106,
-            "startTime": "17:30",
+            "startTime": "17:15",
             "endTime": "18:00",
             "name": "Slot 2 Common Talk iPaaS",
-            "presenters": [51],
+            "presenters": [54, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -86,13 +86,13 @@
           {
             "id": 108,
             "startTime": "19:00",
-            "endTime": "20:00",
+            "endTime": "20:30",
             "name": "Dinner at the office (Catering)",
             "isBreak": true
           },
           {
             "id": 109,
-            "startTime": "20:00",
+            "startTime": "20:30",
             "endTime": "23:45",
             "name": "Leisure / Night Event",
             "isBreak": true
@@ -107,8 +107,9 @@
             "id": 201,
             "startTime": "08:30",
             "endTime": "09:00",
-            "name": "Coffee",
-            "isBreak": true
+            "name": "Opening",
+            "presenters": [55, 51],
+            "isBreak": false
           },
           {
             "id": 202,
@@ -153,7 +154,7 @@
             "startTime": "12:00",
             "endTime": "13:00",
             "name": "Slot 3 Common Talk",
-            "presenters": [51],
+            "presenters": [56, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -505,6 +506,26 @@
     {
       "id": 51,
       "name": "(76 Participants)"
+    },
+    {
+      "id": 52,
+      "name": "Bernard Guehennec"
+    },
+    {
+      "id": 53,
+      "name": "Maurice Siteur"
+    },
+    {
+      "id": 54,
+      "name": "Guest Speaker Mendix"
+    },
+    {
+      "id": 55,
+      "name": "Richard Thoben"
+    },
+    {
+      "id": 56,
+      "name": "Marcel Bakker – Senior Solution Architect Mulesoft"
     }
   ]
 }
