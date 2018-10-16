@@ -22,7 +22,7 @@
             "startTime": "10:00",
             "endTime": "11:00",
             "name": "Opening",
-            "presenters": [52, 29, 9, 30, 31, 51],
+            "presenters": [1, 9, 29, 30, 31, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -61,7 +61,7 @@
             "startTime": "16:30",
             "endTime": "17:15",
             "name": "Slot 1 Common Talk",
-            "presenters": [53, 51],
+            "presenters": [5, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -70,7 +70,7 @@
             "startTime": "17:15",
             "endTime": "18:00",
             "name": "Slot 2 Common Talk iPaaS",
-            "presenters": [54, 51],
+            "presenters": [6, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -108,7 +108,7 @@
             "startTime": "08:30",
             "endTime": "09:00",
             "name": "Opening",
-            "presenters": [55, 51],
+            "presenters": [11, 51],
             "isBreak": false
           },
           {
@@ -154,7 +154,7 @@
             "startTime": "12:00",
             "endTime": "13:00",
             "name": "Slot 3 Common Talk",
-            "presenters": [56, 51],
+            "presenters": [12, 51],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -311,7 +311,7 @@
   "presenters": [
     {
       "id": 1,
-      "name": "Marco Rose"
+      "name": "Bernard Guehennec"
     },
     {
       "id": 2,
@@ -329,11 +329,11 @@
     },
     {
       "id": 5,
-      "name": "Krystian Granatowski"
+      "name": "Maurice Siteur"
     },
     {
       "id": 6,
-      "name": "Arkadiusz Maciejowski"
+      "name": "Guest Speaker Mendix"
     },
     {
       "id": 7,
@@ -345,7 +345,7 @@
     },
     {
       "id": 9,
-      "name": "Iwan Rochus Van Der Kleijn"
+      "name": "Desiree Fräser"
     },
     {
       "id": 10,
@@ -353,11 +353,11 @@
     },
     {
       "id": 11,
-      "name": "Uwe Hantzsche"
+      "name": "Richard Thoben"
     },
     {
       "id": 12,
-      "name": "Stefano Rossini"
+      "name": "Marcel Bakker – Senior Solution Architect Mulesoft"
     },
     {
       "id": 13,
@@ -425,7 +425,7 @@
     },
     {
       "id": 29,
-      "name": "Desiree Fräser"
+      "name": "Iwan Rochus Van Der Kleijn"
     },
     {
       "id": 30,
@@ -506,26 +506,6 @@
     {
       "id": 51,
       "name": "(76 Participants)"
-    },
-    {
-      "id": 52,
-      "name": "Bernard Guehennec"
-    },
-    {
-      "id": 53,
-      "name": "Maurice Siteur"
-    },
-    {
-      "id": 54,
-      "name": "Guest Speaker Mendix"
-    },
-    {
-      "id": 55,
-      "name": "Richard Thoben"
-    },
-    {
-      "id": 56,
-      "name": "Marcel Bakker – Senior Solution Architect Mulesoft"
     }
   ]
 }
