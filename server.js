@@ -23,11 +23,11 @@ app.get('/api/event', function(req, res) {
 });
 
 // diagnostic
-app.get('/say-hello', function(req, res) {
+app.post('/api/say-hello', function(req, res) {
     res.send('Hello World!');
 });
 
-app.get('/what-time-is-it', function(req, res) {
+app.post('/api/what-time-is-it', function(req, res) {
     res.send(new Date(Date.now()).toString());
 });
 
@@ -53,8 +53,8 @@ const subscriptions = function() {
             }
         },
 
-        remove(endpoint) {
-            const indexToDelete = currentSubscriptions.findIndex(sub => sub.endpoint === endpoint);
+        remove(endpointKey) {
+            const indexToDelete = currentSubscriptions.findIndex(sub => sub.endpoint.indexOf(endpointKey) !== -1);
             if (indexToDelete > -1) {
                 currentSubscriptions.splice(indexToDelete, 1);
             }
@@ -92,8 +92,8 @@ app.post('/api/subscription', (req, res) => {
     }
 );
 
-app.delete('/api/subscription/:endpoint', (req, res) => {
-        subscriptions.remove(req.params.endpoint);
+app.delete('/api/subscription/:endpointKey', (req, res) => {
+        subscriptions.remove(req.params.endpointKey);
         res.sendStatus(200);
     }
 );
