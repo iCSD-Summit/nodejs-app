@@ -22,7 +22,7 @@
             "startTime": "10:00",
             "endTime": "11:00",
             "name": "Opening",
-            "presenters": [1, 9, 29, 30, 31, 51],
+            "presenters": [1, 9, 29, 30, 31],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -61,7 +61,7 @@
             "startTime": "16:30",
             "endTime": "17:15",
             "name": "Slot 1 Common Talk",
-            "presenters": [5, 51],
+            "presenters": [5],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -69,8 +69,8 @@
             "id": 106,
             "startTime": "17:15",
             "endTime": "18:00",
-            "name": "Slot 2 Common Talk iPaaS",
-            "presenters": [6, 51],
+            "name": "Slot 2 Guest Speech Mendix",
+            "presenters": [6],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -79,7 +79,7 @@
             "startTime": "18:00",
             "endTime": "19:00",
             "name": "Unconference",
-            "presenters": [51],
+            "presenters": [],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -94,7 +94,7 @@
             "id": 109,
             "startTime": "20:30",
             "endTime": "23:45",
-            "name": "Leisure / Night Event",
+            "name": "Leisure / Evening Activities",
             "isBreak": true
           }
         ]
@@ -108,7 +108,7 @@
             "startTime": "08:30",
             "endTime": "09:00",
             "name": "Opening",
-            "presenters": [11, 51],
+            "presenters": [11],
             "isBreak": false
           },
           {
@@ -154,7 +154,7 @@
             "startTime": "12:00",
             "endTime": "13:00",
             "name": "Slot 3 Common Talk",
-            "presenters": [12, 51],
+            "presenters": [12],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -229,7 +229,7 @@
             "startTime": "10:00",
             "endTime": "12:00",
             "name": "Streams Summary, Conclusions per stream presented to everyone",
-            "presenters": [51],
+            "presenters": [],
             "isBreak": false,
             "room": "Auditorium"
           },
@@ -282,8 +282,8 @@
     {
       "id": 2,
       "name": "Automated Environment Provisioning",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "leaders": [10, 38, 39, 47],
+      "description": "Nowadays application delivery process has to be smooth repeatable and automated. This applies also to infrastructure and environment provisioning. This stream aims to collect expectations, share existing experiences and define how Capgemini & iCSD assets can help in this domain.",
+      "leaders": [10, 38, 47],
       "room": "18th October - Auditorium / 19-20th October - Auditorium"
     },
     {
@@ -298,7 +298,7 @@
       "name": "Advanced UI",
       "description": "This stream focuses primarily on new ways user interfaces may look like. Those powered by chatbots, image/speech recognition or any other possibly. We will not only talk about new frameworks, tools and technical solutions, instead, we will also cover new business opportunities we can offer to our customers; the opportunities which come with these new technologies. Important for us is what the devonfw can offer our customers in, possibly near, future, but also we would like to come to our customers’ expectations coming currently from real engagements. That is why topics like micro frontends, state management architectures, new web APIs (Progressive Web Apps), desktop applications (e.g. Electron) or mobile applications (e.g. Capacitor) are very welcome as well.",
       "leaders": [16, 41, 42, 49],
-      "room": "18th October - M.4.7.6(4th floor, It may change, check updates in the app) / 19-20th October - N.4.15.4(4th floor)"
+      "room": "18th October - Z.4.10.3(4th floor) / 19-20th October - N.4.15.4(4th floor)"
     },
     {
       "id": 5,
@@ -502,10 +502,6 @@
     {
       "id": 50,
       "name": "(14 Participants)"
-    },
-    {
-      "id": 51,
-      "name": "(76 Participants)"
     }
   ]
 }
