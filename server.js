@@ -3,7 +3,6 @@ const fallback = require('express-history-api-fallback');
 const nocache = require('nocache');
 const path = require('path');
 const webPush = require('web-push');
-const file = require('fs');
 const bodyParser = require('body-parser');
 const scheduler = require('./scheduler');
 const basicAuth = require('express-basic-auth');
@@ -109,13 +108,6 @@ app.post('/api/message/:title/:msg/:type', (req, res) => {
     res.send(`Sent ${title}: ${msg}.`);
 });
 
-// REMOTE SCHEDULER
-app.get('/schedule/:year/:month/:day/:hour/:min/:sec/:title/:msg/:type', function(req, res) {
-    scheduler.schedule(req.params.year, req.params.month, req.params.day, req.params.hour, req.params.min, req.params.sec,
-        () => subscriptions.pushAll(req.params.title, req.params.msg, req.params.type));
-    res.send('Task scheduled');
-});
-
 app.use(fallback('index.html', {root: root}));
 
 function getIcon(type) {
@@ -136,8 +128,19 @@ const server = app.listen(port, function() {
     const host = address.address;
     const port = address.port;
 
-    // schedule meals
+    // schedule meals; time GMT+0000 (Coordinated Universal Time)
+    // test
+    scheduler.schedule(2018, 9, 17, 7, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Time for lunch!', 'lunch'));
+
+    scheduler.schedule(2018, 9, 18, 7, 45, 0, () => subscriptions.pushAll('Community Summit 2018', 'Welcome to the Community Summit!', 'logo'));
     scheduler.schedule(2018, 9, 18, 11, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Time for lunch!', 'lunch'));
+    scheduler.schedule(2018, 9, 18, 14, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Coffee break!', 'coffee'));
+    scheduler.schedule(2018, 9, 18, 17, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Time for dinner!', 'lunch'));
+
+    scheduler.schedule(2018, 9, 19, 11, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Time for lunch!', 'lunch'));
+    scheduler.schedule(2018, 9, 19, 14, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Coffee break!', 'coffee'));
+
+    scheduler.schedule(2018, 9, 20, 10, 0, 0, () => subscriptions.pushAll('Community Summit 2018', 'Time for lunch!', 'lunch'));
 
     console.log('Example app listening at http://%s:%s', host, port);
 });
