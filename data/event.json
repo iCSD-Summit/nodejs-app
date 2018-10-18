@@ -27,7 +27,7 @@
             "room": "Auditorium"
           },
           {
-            "id": 101,
+            "id": 103,
             "startTime": "11:00",
             "endTime": "13:00",
             "name": "Streams",
@@ -42,7 +42,7 @@
             "isBreak": true
           },
           {
-            "id": 101,
+            "id": 105,
             "startTime": "14:00",
             "endTime": "16:00",
             "name": "Streams",
@@ -50,48 +50,48 @@
             "isBreak": false
           },
           {
-            "id": 101,
+            "id": 106,
             "startTime": "16:00",
             "endTime": "16:30",
             "name": "Break (Snacks)",
             "isBreak": true
           },
           {
-            "id": 106,
+            "id": 107,
             "startTime": "16:30",
-            "endTime": "17:15",
+            "endTime": "17:30",
             "name": "Slot 1 Common Talk",
             "presenters": [5],
             "isBreak": false,
             "room": "Auditorium"
           },
           {
-            "id": 106,
-            "startTime": "17:15",
+            "id": 108,
+            "startTime": "17:30",
             "endTime": "18:00",
-            "name": "Slot 2 Guest Speech Mendix",
-            "presenters": [6],
-            "isBreak": false,
-            "room": "Auditorium"
-          },
-          {
-            "id": 107,
-            "startTime": "18:00",
-            "endTime": "19:00",
             "name": "Unconference",
             "presenters": [],
             "isBreak": false,
             "room": "Auditorium"
           },
           {
-            "id": 108,
+            "id": 109,
+            "startTime": "18:00",
+            "endTime": "19:00",
+            "name": "Slot 2 Common Talk",
+            "presenters": [6, 51],
+            "isBreak": false,
+            "room": "Auditorium"
+          },
+          {
+            "id": 110,
             "startTime": "19:00",
             "endTime": "20:30",
             "name": "Dinner at the office (Catering)",
             "isBreak": true
           },
           {
-            "id": 109,
+            "id": 111,
             "startTime": "20:30",
             "endTime": "23:45",
             "name": "Leisure / Evening Activities",
@@ -122,51 +122,29 @@
           {
             "id": 203,
             "startTime": "11:00",
-            "endTime": "11:30",
-            "name": "Break",
-            "isBreak": true
+            "endTime": "12:00",
+            "name": "Visit ASE",
+            "isBreak": false,
+            "room": "Auditorium"
           },
           {
             "id": 204,
-            "startTime": "11:00",
-            "endTime": "11:30",
-            "name": "Visit AIE (Group 1)",
+            "startTime": "12:00",
+            "endTime": "13:00",
+            "name": "iPaas & Capgemini Cloud",
+            "presenters": [52],
             "isBreak": false,
             "room": "Auditorium"
           },
           {
             "id": 205,
-            "startTime": "11:30",
-            "endTime": "12:00",
-            "name": "Visit AIE (Group 2)",
-            "isBreak": false,
-            "room": "Auditorium"
-          },
-          {
-            "id": 206,
-            "startTime": "11:30",
-            "endTime": "12:00",
-            "name": "Break",
-            "isBreak": true
-          },
-          {
-            "id": 207,
-            "startTime": "12:00",
-            "endTime": "13:00",
-            "name": "Slot 3 Common Talk",
-            "presenters": [12],
-            "isBreak": false,
-            "room": "Auditorium"
-          },
-          {
-            "id": 208,
             "startTime": "13:00",
             "endTime": "14:00",
             "name": "Lunch (Catering)",
             "isBreak": true
           },
           {
-            "id": 209,
+            "id": 206,
             "startTime": "14:00",
             "endTime": "16:00",
             "name": "Streams",
@@ -174,29 +152,37 @@
             "isBreak": false
           },
           {
-            "id": 210,
+            "id": 207,
             "startTime": "16:00",
             "endTime": "16:30",
             "name": "Break",
             "isBreak": true
           },
           {
-            "id": 211,
+            "id": 208,
             "startTime": "16:30",
-            "endTime": "18:30",
+            "endTime": "18:00",
             "name": "Streams",
             "presenters": [37],
             "isBreak": false
           },
           {
-            "id": 212,
+            "id": 209,
+            "startTime": "18:00",
+            "endTime": "18:30",
+            "name": "Unconference",
+            "presenters": [],
+            "isBreak": false
+          },
+          {
+            "id": 210,
             "startTime": "18:30",
             "endTime": "19:30",
-            "name": "Leisure",
+            "name": "Break / Leisure",
             "isBreak": true
           },
           {
-            "id": 213,
+            "id": 211,
             "startTime": "19:30",
             "endTime": "23:45",
             "name": "Special Event Dinner",
@@ -291,7 +277,7 @@
       "name": "E2E Testing",
       "description": "How can we improve our end to end testing solution to accelerate our delivery?, during three days we will have discussions to build the best solution and we will also do hand-ons sessions and finally a keynote given by Maurice Siteur, a Capgemini testing expert.",
       "leaders": [40, 14, 44, 48],
-      "room": "18th October - N.4.9.5(4th floor) / 19-20th October - N.4.0.1.5 (4th floor)"
+      "room": "18th October - N.4.9.5(4th floor) / 19-20th October - N.4.01.5 (4th floor)"
     },
     {
       "id": 4,
@@ -333,7 +319,7 @@
     },
     {
       "id": 6,
-      "name": "Guest Speaker Mendix"
+      "name": "Mischa van Wekhoven"
     },
     {
       "id": 7,
@@ -353,7 +339,7 @@
     },
     {
       "id": 11,
-      "name": "Richard Thoben"
+      "name": "Bas van Morselt"
     },
     {
       "id": 12,
@@ -502,6 +488,14 @@
     {
       "id": 50,
       "name": "(14 Participants)"
+    },
+    {
+      "id": 51,
+      "name": "Mendix"
+    },
+    {
+      "id": 52,
+      "name": "Ben Scowen"
     }
   ]
 }
