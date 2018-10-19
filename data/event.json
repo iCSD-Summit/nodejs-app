@@ -12,7 +12,7 @@
         "timeSlots": [
           {
             "id": 101,
-            "startTime": "09:00",
+            "startTime": "09:01",
             "endTime": "10:00",
             "name": "Welcome Coffee",
             "isBreak": true
