@@ -167,16 +167,8 @@
             "isBreak": false
           },
           {
-            "id": 209,
-            "startTime": "18:00",
-            "endTime": "18:30",
-            "name": "Unconference",
-            "presenters": [],
-            "isBreak": false
-          },
-          {
             "id": 210,
-            "startTime": "18:30",
+            "startTime": "18:00",
             "endTime": "19:30",
             "name": "Break / Leisure",
             "isBreak": true
@@ -213,6 +205,14 @@
           {
             "id": 303,
             "startTime": "10:00",
+            "endTime": "10:30",
+            "name": "Unconference",
+            "presenters": [],
+            "isBreak": false
+          },
+          {
+            "id": 304,
+            "startTime": "10:30",
             "endTime": "12:00",
             "name": "Streams Summary, Conclusions per stream presented to everyone",
             "presenters": [],
@@ -220,7 +220,7 @@
             "room": "Auditorium"
           },
           {
-            "id": 304,
+            "id": 305,
             "startTime": "12:00",
             "endTime": "13:00",
             "name": "Lunch (Catering)",
